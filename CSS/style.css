@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stacks nav on top of other content */
+    min-height: 100vh;
+}
+
+.profile-info {
+    text-align: center; /* Center content within the sidebar */
+}
+
+.profile-img {
+    max-width: 100%; /* Fit image within the sidebar */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin-top: 20px; /* Space between the image and text */
+}
+
+h1 {
+    font-size: 24px; /* Size of the name font */
+    color: #333; /* Dark grey for text */
+    font-weight: bold; /* Bold for emphasis */
+    margin-bottom: 10px; /* Space below the name */
+}
+
+.main-container {
+    display: flex;
+    margin-top: 40px; /* Height of nav bar */
+    width: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    height: calc(100vh - 40px); /* Height accounting for nav */
+    background-color: #f4f4f4;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px 5px; /* Space around social links */
+    color: #0077b5; /* Custom color for social links */
+    text-decoration: none; /* No underline */
+    font-size: 16px; /* Uniform font size for links */
+    font-weight: bold; /* Bold for better visibility */
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0; /* Starts from the left edge */
+    width: 100%; /* Full width */
+    background-color: #f4f4f4; /* Light grey background */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    padding: 10px 0; /* Padding inside the nav */
+}
+
+.nav-item {
+    padding: 10px 20px;
+    border: 4px solid black; /* Visible border */
+    border-radius: 10px; /* Rounded corners */
+    margin: 0 20px;
+}
+
+.nav-item a {
+    color: black; /* Text color */
+    text-decoration: none; /* No underline */
+    font-size: 16px; /* Text size */
+    display: block; /* Link covers the nav-item area */
+    font-weight: bold; /* Bold text */
+}
+
+.content {
+    margin-top: 20px;
+    flex-grow: 1; /* Takes the remaining space */
+    padding: 20px; /* Adds some padding around the content */
+    display: flex; /* Ensures flex properties are applied */
+    flex-direction: column; /* Stacks child content vertically */
+    align-items: flex-start; /* Aligns child content to the start (left) */
+    width: 100%; /* Ensures the content container takes full width */
+}
+
+.content h1 {
+    text-align: center; /* Ensures the text is centered within the h1 itself */
+    width: 100%; /* Takes full width to center properly */
+    margin: 20px 0; /* Adds top and bottom margin for spacing */
+    font-size: 25px;
+}
+
+
+.content-row {
+    display: flex;
+    justify-content: center; /* Centers children horizontally in the row */
+    align-items: center; /* Aligns children vertically */
+    width: 100%; /* Full width to utilize all available horizontal space */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if space is insufficient */
+    padding: 20px 0; /* Padding for better spacing from other elements */
+}
+
+
+.graph-image {
+    margin-top: 20px; /* Adds 20px of space above the graph image */
+    width: 25%; /* Keeps the graph image at 25% width */
+    margin-right: 20px; /* Adds space between the graph and the text box */
+    border: 4px solid #000; /* Solid black border */
+    border-radius: 10px; /* Rounded corners */
+    height: auto; /* Height adjusts automatically */
+}
+
+.graph-image {
+    margin-top: 20px;
+    width: auto; /* Adjust width to be automatic, or set a specific percentage/width */
+    height: auto; /* Height adjusts automatically */
+    border: 4px solid #000;
+    border-radius: 10px;
+}
+
+.text-box {
+    width: 600px; /* Adjust this width to fit your content or make it responsive */
+    border: 4px solid black;
+    padding: 20px;
+    margin-top: 20px; /* Ensures spacing from any elements above if they wrap */
+    text-align: justify;
+    border-radius: 10px;
+}
+
+.text2 {
+    font-size: 18px;
+}
+
+
+
+
