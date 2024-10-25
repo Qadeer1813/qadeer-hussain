@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    flex-direction: column; /* Stacks nav on top of other content */
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -30,15 +30,19 @@ h1 {
 
 .main-container {
     display: flex;
-    margin-top: 40px; /* Height of nav bar */
+    margin-top: 40px; /* This should match the nav's total height if nav has padding */
     width: 100%;
+    padding-left: 320px; /* 300px width + 20px padding of sidebar */
 }
 
 .sidebar {
     width: 300px;
     padding: 20px;
-    height: calc(100vh - 40px); /* Height accounting for nav */
+    height: 100vh; /* Ensures it reaches the top and bottom of the viewport */
     background-color: #f4f4f4;
+    position: fixed; /* Makes sidebar fixed */
+    top: 0;
+    left: 0;
 }
 
 .social-links a {
@@ -53,12 +57,15 @@ h1 {
 .nav {
     position: fixed;
     top: 0;
-    left: 0; /* Starts from the left edge */
-    width: 100%; /* Full width */
-    background-color: #f4f4f4; /* Light grey background */
+    left: 300px; /* Adjust this to exactly match the sidebar width */
+    right: 0; /* Ensures it extends to the right edge of the viewport */
+    height: 60px; /* Define a fixed height for the navbar */
+    background-color: #f4f4f4;
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    padding: 10px 0; /* Padding inside the nav */
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    padding: 0 20px; /* Adjust padding as needed */
+    z-index: 1000; /* Ensures it's on top */
 }
 
 .nav-item {
@@ -133,7 +140,3 @@ h1 {
 .text2 {
     font-size: 18px;
 }
-
-
-
-
