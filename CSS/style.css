@@ -158,3 +158,14 @@ h1 {
     box-sizing: border-box; /* Includes padding and border in the element's width and height */
     width: calc(33.333% - 10px); /* Precise 3 items per row, accounting for margins */
 }
+
+.image {
+    width: 630px; /* or any other size that fits your design */
+    height: auto; /* maintain aspect ratio */
+    border-radius: 10px; /* if you want rounded corners */
+    margin-right: 10px; /* space between the image and the text */
+    border: 4px solid black; /* optional border */
+    margin-right: 20px; 
+    padding: 1em;
+}
+
