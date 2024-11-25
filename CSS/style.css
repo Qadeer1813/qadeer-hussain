@@ -140,3 +140,21 @@ h1 {
 .text2 {
     font-size: 18px;
 }
+
+.technologies {
+    list-style: none; /* Removes default bullets */
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    padding: 0; /* Removes padding */
+    margin: -5px; /* Negative margin to counteract the item margins for alignment */
+}
+
+.technologies li {
+    background-color: #f4f4f4; /* Background color */
+    padding: 10px; /* Uniform padding */
+    margin: 5px; /* Consistent margins */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    box-sizing: border-box; /* Includes padding and border in the element's width and height */
+    width: calc(33.333% - 10px); /* Precise 3 items per row, accounting for margins */
+}
